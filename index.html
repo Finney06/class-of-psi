@@ -16,7 +16,7 @@
     <h1>Class of Psi '24</h1>
 
     <!-- Create Form -->
-    <form id="form" onsubmit="submitForm(event)">
+    <form id="form" >
 
         <!-- Details -->
         <div class="form-control">
@@ -74,15 +74,19 @@
         </div>
 
         <!-- Multi-line Text Input Control -->
-        <button type="submit" value="submit">
+        <button class="submit-button" type="submit" value="submit">
             Submit
         </button>
     </form>
 
-    <div id="confirmation-message">
-        <p>Thank you for submitting your information!</p>
-        <!-- You can customize this message as per your taste -->
-    </div>
+    <div class="popup-overlay">
+        <div class="popup-card">
+          <img src="giphy-unscreen.gif" alt="Circular Image" class="circular-image">
+          <h2>Thanks for your submission!</h2>
+          <button id="ok-button" class="button">OK</button>
+        </div>
+      </div>
+      
     
     <script src="script.js"></script>
 </body>
