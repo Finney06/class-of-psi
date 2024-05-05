@@ -14,10 +14,10 @@ function submitForm(event) {
         ]
     };
 
-    if (formData.whatsappUsername.trim() === '' || formData.whatsappUsername.trim() === '@') {
-        alert('Please enter a valid Whatsapp username.');
-        return;
-    }
+ //   if (formData.whatsappUsername.trim() === '' || formData.whatsappUsername.trim() === '@') {
+//        alert('Please enter a valid Whatsapp username.');
+     //   return;
+  //  }
 
     // Upload image to Cloudinary
     const fileInput = document.getElementById('picture');
