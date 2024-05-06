@@ -36,14 +36,26 @@
             <!-- Input Type Text -->
             <input type="text" id="nickname" placeholder="Enter your nickname" />
         </div>
-
+        
+        <div class="form-control">
+            <label for="whatsapp-number" id="label-whatsapp-number">
+                WhatsApp Number
+            </label>
+        
+            <!-- Input Type Text -->
+            <input type="tel" id="whatsapp-number" placeholder="Enter your WhatsApp number" pattern="\+234\s[0-9]{3}\s[0-9]{3}\s[0-9]{4}" value="+234" required />
+            <small>Enter a valid phone number (e.g., +234 901 234 5678)</small>
+        </div>
+        
         <div class="form-control">
             <label for="username" id="label-username">
-                Whatsapp Username
+                WhatsApp Username
             </label>
 
             <!-- Input Type Text -->
             <input type="text" id="username" placeholder="@ Enter your Whatsapp Username" value="@" required/>
+            <small>(Enter a valid WhatsApp Username)</small>
+            
         </div>
 
         <div class="form-control">
@@ -66,22 +78,24 @@
 
         <div class="form-control">
             <label for="picture" id="label-picture">
-                Upload a picture
+                Upload a picture (Image files only)
             </label>
 
             <!-- Input Type Email-->
-            <input type="file" id="picture" required />
+            <input type="file" id="picture" accept="image/*" required />
         </div>
 
         <!-- Multi-line Text Input Control -->
         <button class="submit-button" type="submit" value="submit">
-            Submit
+            <span id="submit-text">Submit</span>
+            <div id="loader" style="display: none;"></div>
         </button>
+        
     </form>
 
     <div class="popup-overlay">
         <div class="popup-card">
-          <img src="giphy-unscreen.gif" alt="Circular Image" class="circular-image">
+          <img src="images/giphy-unscreen.gif" alt="Circular Image" class="circular-image">
           <h2>Thanks for your submission!</h2>
           <button id="ok-button" class="button">OK</button>
         </div>

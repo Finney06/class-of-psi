@@ -2,7 +2,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 		body {
-			background: url(3661935.webp) ;
+			background: url(images/3661935.webp) ;
 			background-size: cover;
 			font-family: "Montserrat", sans-serif;
 			text-align: center;
@@ -126,4 +126,27 @@
 		  #ok-button:hover {
 			background-color: #068e4f;;
 		  }
+
+		  /* Styling the loader */
+#loader {
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+	background-image: url(images/Spinner.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* Styling the submit button */
+.submit-button {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+	justify-content: center;
+}
+
+/* Center the loader vertically with the text */
+.submit-button #loader {
+    align-self: center; /* Align vertically */
+}
+
 		  
